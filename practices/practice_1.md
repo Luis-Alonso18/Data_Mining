@@ -10,7 +10,7 @@ Hint:
 ```R
 size <- 100L
 ```
-[]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p1.jpg)
+[alt text]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p1.jpg)
 
 2. Initialize counter
 ```R
