@@ -1,6 +1,6 @@
 # INDEX 
 ## -  Unit 1
-### Practices
+### -    Practices
    -  [Git_Flow Practice]
    -  [Practice 1]
 ### Homeworks
