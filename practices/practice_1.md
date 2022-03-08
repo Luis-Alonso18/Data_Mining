@@ -10,13 +10,13 @@ Hint:
 ```R
 size <- 100L
 ```
-[alt text]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p1.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p1.jpg)
 
 2. Initialize counter
 ```R
 counter <- 0
 ```
-[]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p2.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p2.jpg)
 
 3. loop for(i in rnorm(size))
 4. Check if the iterated variable falls
@@ -31,12 +31,12 @@ for(i in rnorm(size)){
 }
 counter
 ```
-[]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p3.jpg)
-[]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p4.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p3.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p4.jpg)
 
 6. return a result <- counter / N
 ```R
 result<- counter/size
 result
 ```
-[]!(https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p5.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/practice_1_p5.jpg)
