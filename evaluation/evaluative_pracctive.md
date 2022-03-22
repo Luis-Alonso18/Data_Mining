@@ -37,32 +37,46 @@ Load ggplot2 libraries
 library(ggplot2)
 
 ```
-We generate a new dataframe from the added vectors
+We make a filter of the year 1960 and call it stats1960
 ``` R
-newdatafram <- data.frame(code=Country_Code, lifex1960=Life_Expectancy_At_Birth_1960, 
-                          lifex2013=Life_Expectancy_At_Birth_2013)
+stats1960<-stats[stats$Year==1960,]
 ```
-The dataframes new dataframe and stats have been merged to generate a new dataframe called merged
+
+We make a filter of the year 2013 and call it stats2013
 ``` R
-merged <- merge(stats, newdatafram, by.x = "Country.Code", by.y = "code")
+stats2013<-stats[stats$Year==2013,]
+```
+We generate a new dataframe with the vector data called dataframe1960.
+``` R
+datafram1960 <- data.frame(code=Country_Code, lifex1960=Life_Expectancy_At_Birth_1960)
+```
+We generate a new dataframe with the vector data called dataframe2013.
+``` R
+datafram2013 <- data.frame(code=Country_Code, lifex2013=Life_Expectancy_At_Birth_2013)
+```
+The dataframes datafram1960 and stats1960 have been merged to generate a new dataframe called merged1960
+``` R
+merged1960 <- merge(stats1960, datafram1960, by.x = "Country.Code", by.y = "code")
+```
+The dataframes dataframe2013 and stats2013 have been merged to generate a new dataframe called merged2013
+``` R
+merged2013 <- merge(stats2013, datafram2013, by.x = "Country.Code", by.y = "code")
 ```
 You must generate a scatter-plot showing the statistics for life expectancy (Life expectancy - y-axis) and fertility rate (Fertility Rate -x-axis) by country (Country).
 ##### Life expectancy and fertility rate year 1960 by country
 ``` R
-qplot(data = merged, x=Fertility.Rate, y= lifex1960,
+qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
       color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
       main = "Life expectancy and fertility rate year 1960 by country")
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/diadis1.png?raw=true)
+![]()
 
 
 ##### Life expectancy and fertility rate year 2013 by country
 ``` R
-qplot(data = merged, x=Fertility.Rate, y= lifex2013,
-      color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
-      main = "Life expectancy and fertility rate year 2013 by country")
+
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/diadis2.png?raw=true)
+![]()
 
 
 The scatterplot should also be classified by Country Regions.
@@ -70,19 +84,13 @@ You have been given data for 2 years: 1960 and 2013 and you are required to prod
 
 ##### Life expectancy and fertility rate year 1960 by Regions
 ``` R
-qplot(data = merged, x=Fertility.Rate, y= lifex1960,
-       color= Region, size=I(3), shape=I(19), alpha=I(.4),
-      main = "Life expectancy and fertility rate year 1960 by Regions")
+
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/diadis3.png?raw=true)
+![]()
 
 ##### Life expectancy and fertility rate year 2013 by Regions
 ``` R
-qplot(data = merged, x=Fertility.Rate, y= lifex2013,
-      color= Region, size=I(3), shape=I(19), alpha=I(.4),
-      main = "Life expectancy and fertility rate year 2013 by Regions")
-```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/diadis4.png?raw=true)
 
-##### You have also been asked to provide information on how the two periods compare. (Hint: Basically the explanation of your observations)
-Taking into account what the diagrams show us, life expectancy has increased in different countries such as those on the African continent, which from around 30 and 40 years in 1960 to between 65 and 48 years in 2013, the fertility rate has increased remained constantly high compared to Europe which increased its life expectancy by 10 years which increased its fertility rate very little. Similarly, we can see that the Asian and American continents are divided because some countries have a lower birth rate while other countries on the same continent have a fairly high birth rate. In conclusion, we can say that life expectancy has increased throughout the world and the birth rate has remained unchanged in recent years.
+```
+![]()
+
