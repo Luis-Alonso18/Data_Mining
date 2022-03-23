@@ -13,14 +13,19 @@ library(ggplot2)
 stats1960<-stats[stats$Year==1960,]
 #Filter stats year 2013
 stats2013<-stats[stats$Year==2013,]
+
 #Create new data frame datafram1960
 datafram1960 <- data.frame(code=Country_Code, lifex1960=Life_Expectancy_At_Birth_1960)
 #Create a new data frame datafram2013
 datafram2013 <- data.frame(code=Country_Code, lifex2013=Life_Expectancy_At_Birth_2013)
+
+
 #join the data frame stats1960 and dataframe1960
 merged1960 <- merge(stats1960, datafram1960, by.x = "Country.Code", by.y = "code")
 # join the data frame stats2013 and dataframe2013
 merged2013 <- merge(stats2013, datafram2013, by.x = "Country.Code", by.y = "code")
+
+
 #Life expectancy and fertility rate year 1960 by country
 qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
       color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
@@ -29,6 +34,8 @@ qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
 qplot(data = merged2013, x=Fertility.Rate, y= lifex2013,
       color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
       main = "Life expectancy and fertility rate year 2013 by country")
+
+
 #Life expectancy and fertility rate year 1960 by Regions
 qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
        color= Region, size=I(3), shape=I(19), alpha=I(.4),

@@ -69,14 +69,16 @@ qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
       color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
       main = "Life expectancy and fertility rate year 1960 by country")
 ```
-![]()
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/plot1.png?raw=true)
 
 
 ##### Life expectancy and fertility rate year 2013 by country
 ``` R
-
+qplot(data = merged2013, x=Fertility.Rate, y= lifex2013,
+      color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
+      main = "Life expectancy and fertility rate year 2013 by country")
 ```
-![]()
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/plot2.png?raw=true)
 
 
 The scatterplot should also be classified by Country Regions.
@@ -84,13 +86,21 @@ You have been given data for 2 years: 1960 and 2013 and you are required to prod
 
 ##### Life expectancy and fertility rate year 1960 by Regions
 ``` R
-
+qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
+       color= Region, size=I(3), shape=I(19), alpha=I(.4),
+      main = "Life expectancy and fertility rate year 1960 by Regions")
 ```
-![]()
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/plot3.png?raw=true)
 
 ##### Life expectancy and fertility rate year 2013 by Regions
 ``` R
-
+qplot(data = merged2013, x=Fertility.Rate, y= lifex2013,
+      color= Region, size=I(3), shape=I(19), alpha=I(.4),
+      main = "Life expectancy and fertility rate year 2013 by Regions")
 ```
-![]()
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/_images/plot4.png?raw=true)
+Some data has been provided in a CVS file, some in R vectors. The CVS file contains combined data from both years. All data manipulation must be done in R (Not Excel) because this project can be audited at a later stage.
+
+##### You have also been asked to provide information on how the two periods compare. (Hint: Basically the explanation of your observations)
+As we can see in the diagrams, life expectancy has been suspected in all the countries of the world, in turn the birth rate has decreased around the world, with the exception of some underdeveloped countries such as Africa, which does not show a significant decrease in the birth rate. We can say that life expectancy has increased continuously and a decrease in the birth rate is created. This can have long-term consequences.
 
