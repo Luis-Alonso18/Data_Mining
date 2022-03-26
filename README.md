@@ -8,6 +8,7 @@
   
 ### -    Homeworks
 ### -    Evaluation
+   - [Evaluation]
 ### -    Research
 
 
@@ -15,3 +16,4 @@
 [Practice 1]:https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/practices/practice_1.md
 [Practice 2]:https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/practices/practice_2/practice_2.md
 [Practice 3]:https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/practices/practice_3/practice_3.md
+[Evaluation]:https://github.com/Luis-Alonso18/Data_Mining/blob/unidad_1/evaluation/evaluative_pracctive.md
