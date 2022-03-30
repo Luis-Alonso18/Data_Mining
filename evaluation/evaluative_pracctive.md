@@ -16,7 +16,16 @@ ALONSO VILLEGAS LUIS ANTONIO 18212139
 SANCHEZ BAEZ RAFAEL 16212543  
   
 TIJUANA B.C. A 22 DE MARZO DE 2022  
-## Evaluative practice
+## Evaluative practice  
+The World Bank was very impressed with their delivery at the previous exhibition and they have a new project for you.  
+You must generate a scatter-plot showing the statistics life expectancy (Life expectant - y-axis) and fertility rate (Fertility Rate -axis x) by country (Country).  
+The scatterplot should also be classified by country Regions (Country Regions).  
+You have been provided with data for 2 years: 1960 and 2013 and you are required to produced a visualization for each of these years.  
+Some data has been provided in a CVS file, some in R vectors.  
+CVS file contains combined data from both years. All data handling must be done in R (not in Excel) because this project can be audited in a later stage.  
+You have also been asked to provide information on how the two periods. (Hint: Basically the explanation of your observations)  
+   
+
 Load data from CSV
 ``` r
 stats <- read.csv(file.choose())
