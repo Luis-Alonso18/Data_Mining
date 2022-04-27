@@ -14,7 +14,7 @@ covid <- read.csv("COVID-19 Coronavirus.csv")
 head(covid)
 colnames(covid) <- c("Country", "Other.Name", "Code", "Population", "Continent", "Total.Cases","Total.Deaths", "Total.Cases.1M.Pop", "Total.Deaths.1M.Pop", "Death.Percentage")
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/edit/Unit_2/practices/practice_1/pic_1)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/practices/practice_1/pic_1.png)
 
 
 ### Dot scatter plot
@@ -22,7 +22,7 @@ colnames(covid) <- c("Country", "Other.Name", "Code", "Population", "Continent",
 #Scatter plot
 ggplot(data=covid,aes(x=Total.Cases.1M.Pop,y=Total.Deaths.1M.Pop,color=Continent))+geom_point()+(xlab("Total Cases per 1M population"))+(ylab("Total Deaths per 1M population"))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/edit/Unit_2/practices/practice_1/pic_2)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/practices/practice_1/pic_2.png)
 
 ### Facet chart
 ```r
@@ -30,7 +30,7 @@ ggplot(data=covid,aes(x=Total.Cases.1M.Pop,y=Total.Deaths.1M.Pop,color=Continent
 v <- ggplot(covid, aes(x=Death.Percentage))
 v + geom_histogram(binwidth = 1, aes(fill=Continent),color="Black") + facet_grid(Continent~.,scales="free")
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/edit/Unit_2/practices/practice_1/pic_3)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/practices/practice_1/pic_3.png)
 
 
 ### Graphic layer themes
@@ -45,4 +45,4 @@ h+  xlab("Death percentage") +
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/edit/Unit_2/practices/practice_1/pic_4)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/practices/practice_1/pic_4.png)
