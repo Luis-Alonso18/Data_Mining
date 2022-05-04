@@ -1,5 +1,22 @@
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ElztEEG0qaCdQPxa4eZFgEMnW73VtVZp0UWesiHzdyequ05qBo8nYKiQLiTwHEtKfg&usqp=CAU)  
+TECNOLÓGICO NACIONAL DE MÉXICO  
+INSTITUTO TECNOLÓGICO DE TIJUANA  
+SUBDIRECCIÓN ACADÉMICA  
+(DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN)  
+ING. SISTEMAS COMPUTACIONALES  
+MATERIA:  
+MINERÍA DE DATOS  
+UNIDAD 2:  
+Práctica Evaluatoria  
+DOCENTE:  
+JOSE CHRISTIAN ROMERO HERNANDEZ  
+ALUMNO(S):  
+ALONSO VILLEGAS LUIS ANTONIO 18212139  
+SANCHEZ BAEZ RAFAEL 16212543  
+  
+TIJUANA B.C. A 04 DE MAYO DE 2022   
+  
 # Evaluative Practice Unit 2
-
 ### Instructions
 Develop the following problem with R and RStudio for knowledge extraction that the problem requires.
 The directors of the movie review website are very happy with your previous delivery and now they have a new requirement for you.
