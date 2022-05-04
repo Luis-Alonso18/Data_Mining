@@ -30,9 +30,11 @@ Genrefilter<-Data[Data$Genre=="action" | Data$Genre=="adventure" | Data$Genre=="
 Studiofilter<-Genrefilter[Genrefilter$Studio=="Buena Vista Studios"| Genrefilter$Studio=="Fox" | Genrefilter$Studio=="Paramount Pictures"| Genrefilter$Studio=="Sony"| Genrefilter$Studio=="Universal"| Genrefilter$Studio=="WB",]
 ```
   
-#### 4. We call the library "ggplot2" to make the graph
+#### 4. We call the "ggplot2" libraries to make the graph and load the text fonts
 ```r
 library(ggplot2)
+library(extrafont)
+loadfonts()
 ```
   
 #### 5. We create the graph that we are asked for
