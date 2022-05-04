@@ -5,7 +5,7 @@ Develop the following problem with R and RStudio for knowledge extraction that t
 The directors of the movie review website are very happy with your previous delivery and now they have a new requirement for you.
 The previous consultant had created a chart for them which is illustrated in the following image.
   
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/evaluation/evaluative_practice/pic1.png)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/evaluation/evaluative_practice/pic1.jpg)
   
 However, the R code used to create the plot has been lost and cannot be recovered.
 Your task is to create the code that will recreate the same graph making it look as close to the original as possible.
@@ -44,4 +44,4 @@ u + geom_jitter() + geom_boxplot(size=0.3,color="Black",alpha=0.5) + labs(title=
     axis.title.y = element_text(color = "purple",size=20),
     plot.title = element_text(hjust=0.5,size=28,family = "Comic Sans MS"))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/evaluation/evaluative_practice/pic2.png)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/evaluation/evaluative_practice/pic2.jpg)
