@@ -6,12 +6,13 @@ the first line of time
 Known as the first timeline, the new chart used individual horizontal bars in a time bar to visualize life spans. I also invented the use of dots to indicate when someone hasn't died yet. The wise men were so impressed by his invention that they decided to give him his doctorate from the University of Edinburgh. For your book; Chart of Biography, Priestly prepared charts showing the lives of 2,000 famous people from 1200 BC to 1750. The book became a bestseller.
   
 ### **2 What is the grammar of graphs?**
-Seville established an analogy (which should not be interpreted literally) between the grammatical construction and the structure of a graph. In this way, he arrived at equivalences such as those seen in table 1.
-(Image)
+Seville established an analogy (which should not be interpreted literally) between the grammatical construction and the structure of a graph. In this way, he arrived at equivalences such as those seen in table 1.  
+
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/research/research_1/pic1.jpg)
   
 But it went further. From the analysis of many graphs, he drew some conclusions to recommend some tips with which to build a graph that would not give rise to confusion and was faithful to its original message. They are what we can see in the following table.
   
-(Image)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/research/research_1/pic2.jpg)
 
 
 ### **Bibliographic references**
