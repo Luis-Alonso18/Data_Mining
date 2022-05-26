@@ -31,7 +31,7 @@ qplot(data = merged1960, x=Fertility.Rate, y= lifex1960,
       color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
       main = "Life expectancy and fertility rate year 1960 by country")
 #Life expectancy and fertility rate year 2013 by country
-qplot(data = merged2013, x=Fertility.Rate, y= lifex2013,
+qplot(data = merged2013, x=Fertility.Rate, y= lifex2013, 
       color= Country.Code, size=I(3), shape=I(19), alpha=I(.4),
       main = "Life expectancy and fertility rate year 2013 by country")
 
