@@ -62,3 +62,5 @@ u + geom_jitter() + geom_boxplot(size=0.3,color="Black",alpha=0.5) + labs(title=
     plot.title = element_text(hjust=0.5,size=28,family = "Comic Sans MS"))
 ```
 ![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_2/evaluation/evaluative_practice/pic2.jpg)
+
+ 
