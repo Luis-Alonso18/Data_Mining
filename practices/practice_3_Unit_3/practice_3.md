@@ -46,14 +46,14 @@ classifier = glm(formula = Purchased ~ .,
 prob_pred = predict(classifier, type = 'response', newdata = test_set[-3])
 prob_pred
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic1.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic1.jpg)
 
 
 ```R
 y_pred = ifelse(prob_pred > 0.5, 1, 0)
 y_pred
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic2.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic2.jpg)
 
 
 
@@ -62,7 +62,7 @@ y_pred
 cm = table(test_set[, 3], y_pred)
 cm
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic3.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic3.jpg)
 The diagonal of the confusion matrix would give us 83%.
 
 ### We plotted the estimated salary, age, and whether it was purchased, using the training set and the test set.
@@ -71,25 +71,25 @@ library(ggplot2)
 ggplot(training_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic4.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic4.jpg)
 
 ```R
 ggplot(training_set, aes(x=Age, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic5.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic5.jpg)
 
 ```R
 ggplot(test_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic6.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic6.jpg)
 
 ```R
 ggplot(test_set, aes(x=Age, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic7.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic7.jpg)
 
 
 
@@ -108,22 +108,22 @@ plot(set[, -3],
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic8.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic8.jpg)
 
 ```R
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic9.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic9.jpg)
 
 ```R
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic10.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic10.jpg)
 
 ```R
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic11.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic11.jpg)
 
 
 
@@ -142,22 +142,22 @@ plot(set[, -3],
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic12.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic12.jpg)
 
 ```R
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic13.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic13.jpg)
 
 ```R
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic14.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic14.jpg)
 
 ```R
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/practices/practice_3_Unit_3/pic15.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic15.jpg)
 
 
 
