@@ -62,7 +62,7 @@ y_pred
 cm = table(test_set[, 3], y_pred)
 cm
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic3.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_3_Unit_3/pic3.jpg)  
 The diagonal of the confusion matrix would give us 83%.
 
 ### We plotted the estimated salary, age, and whether it was purchased, using the training set and the test set.
