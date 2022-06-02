@@ -58,22 +58,22 @@ plot(set[, -3],
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
 ```` 
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic2.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic2.jpg)
   
 ```r
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic3.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic3.jpg)
   
 ```r
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic4.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic4.jpg)
   
 ```r
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic5.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic5.jpg)
   
 ### Visualising the test set results
 ```r
@@ -89,22 +89,22 @@ plot(set[, -3],
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic6.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic6.jpg)
   
 ```r
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic7.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic7.jpg)
   
 ```r
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic8.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic8.jpg)
   
 ```r
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
-![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_2_Unit_3/pic9.jpg)
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/practice_4_Unit_3/pic9.jpg)
   
 ### Conclusion
 The algorithm gives us as a result 2 zones that indicate which is the group to which each data belongs according to age and estimated salary.
