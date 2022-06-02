@@ -60,6 +60,7 @@ y_pred
 cm = table(test_set[, 3], y_pred)
 cm
 ```
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/evaluation/evaluation_practice_Unit_3/pic10.jpg)
   
 ### Visualising the Training set results
 ```r
