@@ -75,5 +75,7 @@ contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
-![]()
+![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_3/practices/Practice_4_unit3/Test_set.png?raw=true)
 
+
+We can notice within the two graphs the result of the points of the salary estimate and the age, in the same way we can notice the errors that the model made when classifying the data.
