@@ -11,7 +11,7 @@ K-means clustering is one of the simplest and most popular unsupervised machine 
 
 Unsupervised algorithms typically make inferences from data sets using only input vectors without referring to known or labeled outcomes (which do not have a dependent variable).
   
-“The goal of K-means is simple: to group together similar data points and discover underlying patterns. To achieve this goal, K-means searches for a fixed number ( k ) of clusters in a data set.
+“The goal of K-means is simple: to group together similar data points and discover underlying patterns. To achieve this goal, K-means searches for a fixed number ( k ) of clusters in a data set.  
 ![](https://github.com/Luis-Alonso18/Data_Mining/blob/Unit_4/evaluation/pic1.jpg) 
   
 A group refers to a collection of data points aggregated due to certain similarities.
